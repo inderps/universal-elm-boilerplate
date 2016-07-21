@@ -1,8 +1,14 @@
 module MyApp exposing (..)
 
-import Html exposing (text)
+import Html.App as App
 
+import Models exposing (globalInit)
+import Updates exposing (globalUpdate)
+import Views exposing (globalView)
 
-main : Html.Html a
 main =
-    text "Helslo World"
+  App.beginnerProgram
+    { model = globalInit 0 0
+    , update = globalUpdate
+    , view = globalView
+    }
