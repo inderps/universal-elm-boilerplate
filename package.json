@@ -1,0 +1,18 @@
+{
+  "name": "elm-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "elm-live --dir=build src/Main.elm --output build/bundle.js --open",
+    "build": "elm-make src/Main.elm --output build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Inderpal Singh <singhinther@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "elm": "^0.17.1",
+    "elm-live": "^2.4.1"
+  }
+}
